@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+	/*HTML and body definitions*/
+	html, body {
+		width: 100%;
+		height: 100%;
+	}
+
+	/*Main title*/
+	.main-title h1, .main-title small {
+		font-weight: bold;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	/*Main title small subtitle*/
+	.main-title small {
+		font-weight: bold;
+		color: #aaa;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+
+	/*Visualization*/
+	.custom-wrapper #visualization {
+		width: 100%;
+	}
+
+	/*Background rect*/
+	.custom-wrapper #visualization .bg-rect {
+		fill: #f5f5f5;
+		stroke: #ddd;
+		stroke-width: 0.5px;
+	}
+
+	/*Axis*/
+	.custom-wrapper #visualization .axis text {
+		font-size: 9px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		fill: #999;
+	}
+
+	.custom-wrapper #visualization .axis line {
+		fill: none;
+		stroke-width: 1px;
+		stroke: #ddd;
+		stroke-opacity: 1;
+		shape-rendering: crispEdges;
+	}
+
+/*	.bar {
+	  fill: steelblue;
+	}
+
+	.bar:hover {
+	  fill: brown;
+	}
+
+	.axis--x path {
+	  display: none;
+	}*/
+
+</style>
+
+<head>
+	
+	<link href="assets/css/bootstrap-overrides.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<svg width="960" height="500"></svg>
+
+	<!-- Loading d3.js library -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<!-- SCRIPT GOES HERE -->
+
+	<!-- Content -->
+	<div class="container-fluid">
+
+		<!-- Main Title -->
+		<div class="row main-title">
+						<div class=col-md-12>
+							<h1>
+								TRABALHO PRÁTICO 2
+							</h1>
+							<small>
+								Reproduzir uma visualização de dados usando D3.js
+							</small>
+						</div>
+		</div>
+		<!-- Main Title -->
+
+		<!-- Visualization -->
+		<div class="row custom-wrapper">
+			<div class="col-md-12">
+				<div id="visualization"></div>
+			</div>
+		</div>
+		<!-- Visualization -->
+
+	</div>
+	<!-- Content -->
+
+</body>
+
+<!-- JQuery Library -->
+<script src="vendors/js/jquery-3.1.0.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+
+<!-- Local Libraries -->
+<script src="vendors/js/latinise_compact.js"></script>
+<script src="vendors/js/d3.v4.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="assets/js/initialize.js"></script>
+<script src="assets/js/create.js"></script>
+<script src="assets/js/axis.js"></script>
+<script src="assets/js/scales.js"></script>
+<script src="assets/js/elements.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
+
