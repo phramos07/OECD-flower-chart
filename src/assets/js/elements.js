@@ -32,6 +32,16 @@ var draw = function() {
 												.select(this)
 												.selectAll("circle.flower-bud")
 												.data([e]);
+			flowerBud.exit().remove();
+			flowerBud = flowerBud
+										.enter()
+										.append('circle')
+										.attr('class', "flower-bud")
+										.merge(flowerBud);
+			flowerBud
+				.attr('x', 0)
+				.attr('y', 0)
+				.attr('r', 2);
 
 			//Labels
 			var flowerLabel = d3
