@@ -7,14 +7,15 @@ var container,
 		data,
 		colorScale,
 		xScale,
-		ySale,
+		yScale,
 		x_axis,
 		y_axis,
 		petalSize = {},
+		petalsScale ={},
 		margin = { top: 30, left: 30, right: 10, bottom: 30};
 
 //After document is ready
-$( document ).ready(function()) {
+$(document).ready(function() {
 
 	//initialize the variables 
 	initialize();
@@ -23,13 +24,13 @@ $( document ).ready(function()) {
 	create();
 
 	//get data from CSV
-	d3.json("./data/countries.json"), function(error, dataCountries) {
+	d3.json("./data/countries.json", function(error, dataCountries) {
 
 		//map countries as hash
 		mapCountries(dataCountries);
 
 		//Get data out of csv
-		d3.csv("./data/data.csv", function(error, csvData)) {
+		d3.csv("./data/data.csv", function(error, csvData) {
 			
 			//set data
 			data = csvData;
@@ -55,11 +56,11 @@ $( document ).ready(function()) {
 			//Draw elements
 			draw();
 
-		}
+		})
 
-	}
+	});
 
-}
+});
 
 
 ////////////////////////////////////////

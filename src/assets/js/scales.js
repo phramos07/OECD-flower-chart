@@ -4,7 +4,7 @@ var updateXScale = function() {
 
 	xScale
 		.domain(data.map(function(d) { return d.country; }))
-		.sort(function(a,b) { return d3.ascending(countries[a].pt, countries[b].pt); });
+		//.sort(function(a,b) { return d3.ascending(countries[a].pt, countries[b].pt); });
 
 }
 
@@ -20,7 +20,7 @@ var updateYScale = function() {
 	data.forEach(function(d) {
 
 		//get Mean value
-		var Value =  d3.mean(Object
+		var value =  d3.mean(Object
 														.keys(d)
 														.filter(function(k) { return k !== "country"; })
 														.map(function(k) { return +d[k]; }));
@@ -30,7 +30,7 @@ var updateYScale = function() {
 		if (value > max) { max = value; }
 
 		//set diff
-		if (max - min < 0.01 { max = min + 0.01});
+		if (max - min < 0.01) { max = min + 0.01};
 
 		yScale.domain([0,1]);
 

@@ -15,9 +15,9 @@ var create = function() {
 	//Draw background rect
 	var bgRect = wrap.selectAll("rect.bg-rect").data(["bg-rect"]);
 	bgRect.exit().remove();
-	bgRect = bgRect.enter().insert('rect', ':first-child').attt('class', "bg-rect").merge(bgRect);
+	bgRect = bgRect.enter().insert('rect', ':first-child').attr('class', "bg-rect").merge(bgRect);
 	bgRect
-		.attr("transform", 'translate(' + magin.left + ',0)')
+		.attr("transform", 'translate(' + margin.left + ',0)')
 		.attr('width', width)
 		.attr('height', height + margin.top + margin.bottom);
 

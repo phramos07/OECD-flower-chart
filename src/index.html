@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
+<!--<style>
 
 	/*HTML and body definitions*/
 	html, body {
@@ -64,7 +64,7 @@
 	  display: none;
 	}*/
 
-</style>
+</style> -->
 
 <head>
 	
@@ -75,8 +75,6 @@
 
 <body>
 
-	<svg width="960" height="500"></svg>
-
 	<!-- Loading d3.js library -->
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 
@@ -86,7 +84,7 @@
 	<div class="container-fluid">
 
 		<!-- Main Title -->
-		<div class="row main-title">
+		<!--<div class="row main-title">
 						<div class=col-md-12>
 							<h1>
 								TRABALHO PRÁTICO 2
@@ -95,13 +93,15 @@
 								Reproduzir uma visualização de dados usando D3.js
 							</small>
 						</div>
-		</div>
+		</div> -->
 		<!-- Main Title -->
 
 		<!-- Visualization -->
 		<div class="row custom-wrapper">
 			<div class="col-md-12">
-				<div id="visualization"></div>
+				<div id="visualization">
+					<svg width="960" height="500"></svg>
+				</div>
 			</div>
 		</div>
 		<!-- Visualization -->
@@ -112,7 +112,7 @@
 </body>
 
 <!-- JQuery Library -->
-<script src="vendors/js/jquery-3.1.0.min.js"></script>
+<script src="vendors/js/jquery-3.2.1.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 

@@ -4,7 +4,7 @@ initialize = function() {
 	//get container
 	container = {
 		selector: "#visualization", 
-		d3: d3.select("%visualization"),
+		d3: d3.select("#visualization"),
 		jq: $("#visualization")};
 
 	//set container height
@@ -19,7 +19,10 @@ initialize = function() {
 
 	//set scales
 	xScale = d3.scaleBand().range([0, width]).padding(0.1);
+	console.log(xScale);
 	yScale = d3.scaleLinear().range([height, 0]);
+		console.log(yScale);
+
 
 }
 
@@ -34,7 +37,7 @@ mapCountries = function(data) {
 mapData = function(data) {
 
 	//set Mean
-	data.forEach(function(d)) {
+	data.forEach(function(d) {
 
 		//get values
 		var values = Object
@@ -48,6 +51,6 @@ mapData = function(data) {
 		d.max = d3.max(values);
 		d.min = d3.min(values);
 
-	}
+	})
 
 }
