@@ -23,7 +23,6 @@ initialize = function() {
 	yScale = d3.scaleLinear().range([height, 0]);
 		console.log(yScale);
 
-
 }
 
 //map countries as hash

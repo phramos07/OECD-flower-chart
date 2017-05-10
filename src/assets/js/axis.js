@@ -7,7 +7,7 @@ var createXAxis = function() {
 	x_axis.call(d3.axisBottom(xScale)).attr("transform", 'translate(0,' + height + ')');
 
 	//remove country codes
-	x_axis.selectAll("path, .tick").remove();
+	// x_axis.selectAll("path, .tick").remove();
 
 }
 
