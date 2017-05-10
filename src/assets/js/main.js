@@ -12,7 +12,7 @@ var container,
 		y_axis,
 		petalSize = {},
 		petalsScale ={},
-		margin = { top: 30, left: 30, right: 10, bottom: 30};
+		margin = { top: 0, left: 0, right: 10, bottom: 20};
 
 //After document is ready
 $(document).ready(function() {
@@ -27,7 +27,7 @@ $(document).ready(function() {
 	d3.json("./data/countries.json", function(error, dataCountries) {
 
 		//map countries as hash
-		// mapCountries(dataCountries);
+		mapCountries(dataCountries);
 
 		//Get data out of csv
 		d3.csv("./data/data.csv", function(error, csvData) {

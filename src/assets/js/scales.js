@@ -4,7 +4,7 @@ var updateXScale = function() {
 
 	xScale
 		.domain(data.map(function(d) { return d.country; }))
-		//.sort(function(a,b) { return d3.ascending(countries[a].pt, countries[b].pt); });
+		// .sort(function(a,b) { return d3.ascending(countries[a].pt, countries[b].pt); });
 
 }
 
@@ -70,7 +70,7 @@ var updatePetalsScale = function() {
 			petalsScale[k].domain(domain);
 
 			//update domain globally
-			// petalsScale[k].domain(yScale.domain());
+			petalsScale[k].domain(yScale.domain());
 
 		});
 	});

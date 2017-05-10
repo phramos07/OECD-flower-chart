@@ -27,7 +27,7 @@ html, body {
 
 /*Background rect*/
 .custom-wrapper #visualization .bg-rect {
-	fill: #f5f5f5;
+	fill: #fffafd;
 	stroke: #ddd;
 	stroke-width: 0.5px;
 }
@@ -46,6 +46,14 @@ html, body {
 	stroke: #ddd;
 	stroke-opacity: 1;
 	shape-rendering: crispEdges;
+}
+
+.line {
+  fill: steelblue;
+}
+
+.line:hover {
+  fill: brown;
 }
 
 /*	.bar {
