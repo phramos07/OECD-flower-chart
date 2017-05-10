@@ -27,7 +27,7 @@ html, body {
 
 /*Background rect*/
 .custom-wrapper #visualization .bg-rect {
-	fill: #fffafd;
+	fill: #f1f5fb;
 	stroke: #ddd;
 	stroke-width: 0.5px;
 }
