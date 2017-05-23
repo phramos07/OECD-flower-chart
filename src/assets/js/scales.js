@@ -3,8 +3,8 @@
 var updateXScale = function() {
 
 	xScale
-		.domain(data.map(function(d) { return d.country; }))
-		// .sort(function(a,b) { return d3.ascending(countries[a].pt, countries[b].pt); });
+		.domain(data.map(function(d) { return d.country; }).sort(function(a,b) { return d3.ascending(countries[a].pt, countries[b].pt); }))
+		// ;
 
 }
 
